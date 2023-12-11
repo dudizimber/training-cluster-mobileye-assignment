@@ -1,0 +1,1 @@
+docker build -t mnist-$1 -f services/$1/Dockerfile --platform linux/arm64 ./services/$1

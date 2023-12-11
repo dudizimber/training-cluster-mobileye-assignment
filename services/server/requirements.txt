@@ -1,0 +1,6 @@
+grpcio==1.60.0
+keras
+tensorflow
+pytest-grpc==0.8.0
+grpcio-testing==1.60.0
+protobuf

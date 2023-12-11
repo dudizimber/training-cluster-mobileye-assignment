@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./services/server
+    ports:
+      - 50051:50051
+    volumes:
+      - ./services/server:/app
+    environment: 
+      - PORT=50051
+    restart: always
+
+  client:
+    build: ./services/client
+    volumes:
+      - ./services/client:/app
+    environment: 
+      - MNIST_SERVER_URL=server:50051
+    restart: unless-stopped
