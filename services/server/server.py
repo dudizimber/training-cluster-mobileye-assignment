@@ -16,7 +16,7 @@ logger.setLevel(logging.INFO)
 PORT = os.environ.get("PORT", "50051")
 
 
-def serve():
+def serve() -> grpc.Server:
     """This function starts the server"""
     try:
         server_instance = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -28,6 +28,7 @@ def serve():
         return server_instance
     except grpc.aio.AioRpcError as e:
         logger.error(e)
+        return None
 
 
 if __name__ == "__main__":
