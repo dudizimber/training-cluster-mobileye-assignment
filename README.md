@@ -11,7 +11,8 @@
 ## System Requirements
 
 - Python 3.11
-- venv
+- venv (optional)
+- Docker and Compose (optional)
 
 ## Development
 
