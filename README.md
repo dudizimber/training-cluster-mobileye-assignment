@@ -1,7 +1,7 @@
 # Training Cluster Mobileye Assignment
 
 
-## Test Requirements
+## Assignment Requirements
 
 [x] Create MNIST server that serves a GRPC endpoint for streaming MNIST sample images
 [x] Create a client server that connects to the MNIST server and ingests the images 
